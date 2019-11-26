@@ -11,9 +11,13 @@ El error del estado se produce cuando suma al count habiendo sido un 0.
 
 x = null; ---> expected: NullPointerException
 
+Cuando el contador de programa se encuentra en la declaración del for, al hacer x.length de un array null, salta la excepción y retornando.
+
 **3. Si es posible, proporciona un caso de prueba que ejecute el fallo que hay en el código, pero que no provoque un error en el estado. Si no se puede, explica por qué.**
 
 x = [1,2,3,4,5,6,7,8,9] ---> expected:9
+
+Puesto que no hay ningún 0 en el array, no habrá un fallo en el estado del count, pero si ejecutará la parte del código (la comparación del if) que está mal.
 
 **4. Si es posible, proporciona un caso de prueba que provoque un error en el estado pero que no acabe provocando una disfunción en el comportamiento del programa. No olvides que el contador del programa forma parte, junto a las variables, del estado del programa. Si no es posible, explique por qué.**
 

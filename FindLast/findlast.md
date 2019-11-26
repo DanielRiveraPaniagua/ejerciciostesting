@@ -13,6 +13,8 @@ No es posible porque siempre va a pasar por el for.
 
 x = [1,2,3,4,5,6,7,8,9]  y = 9 ---> expected:8
 
+No termina el for ya que vuelve antes, con lo que no provoca un error en el estado
+
 **4. Si es posible, proporciona un caso de prueba que provoque un error en el estado pero que no acabe provocando una disfunción en el comportamiento del programa. No olvides que el contador del programa forma parte, junto a las variables, del estado del programa. Si no es posible, explique por qué.**
 
 x = [1,2,3,4,5,6,7,8,9] y = 0 ---> expected: -1

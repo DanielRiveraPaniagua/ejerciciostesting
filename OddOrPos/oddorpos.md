@@ -9,9 +9,13 @@ El % en java no es el módulo sino el resto. El resto de un número impar negati
 
 x = null ---> expected: NullPointerException
 
+Retorna al hacer x.length con lo que no entra al for y, por tanto, no ejecuta el código con el fallo.
+
 **3. Si es posible, proporciona un caso de prueba que ejecute el fallo que hay en el código, pero que no provoque un error en el estado. Si no se puede, explica por qué.**
 
-x = [1,2,3,4,5,6,7,8,9] ---> expected:9 Todos los impares son positivos.
+x = [1,2,3,4,5,6,7,8,9] ---> expected:9
+
+Todos los impares son positivos, con lo que no produce un error en el estado a pesar de ejecutar varias veces el if.
 
 **4. Si es posible, proporciona un caso de prueba que provoque un error en el estado pero que no acabe provocando una disfunción en el comportamiento del programa. No olvides que el contador del programa forma parte, junto a las variables, del estado del programa. Si no es posible, explique por qué.**
 
